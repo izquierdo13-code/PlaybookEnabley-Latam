@@ -1,0 +1,1009 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Playbook comercial Enabley · Partners LATAM</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --indigo-950:#1B1048; --indigo-900:#241663; --indigo-800:#33208C;
+  --violet-600:#4B2BA8; --magenta-600:#A0208F; --magenta-500:#C2249B;
+  --gold:#F2B841; --mist:#F3EFFB; --paper:#FBF9FE; --ink:#2A1B5E; --ink-soft:#54457F;
+  --line:rgba(42,27,94,.14); --panel:#fff; --panel-2:#F7F3FD;
+  --ok:#137A4D; --warn:#B4610A;
+  --side:272px; --radius:14px;
+  --font:'Poppins',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{margin:0;font-family:var(--font);color:var(--ink);background:var(--paper);font-size:15.5px;line-height:1.65}
+a{color:var(--violet-600)}
+a:hover{color:var(--magenta-600)}
+:focus-visible{outline:3px solid var(--gold);outline-offset:2px;border-radius:4px}
+
+/* ---------- navegación lateral ---------- */
+.side{position:fixed;inset:0 auto 0 0;width:var(--side);background:var(--indigo-950);color:#E9E3FA;overflow-y:auto;padding:22px 14px 40px;z-index:30}
+.brand{padding:4px 10px 18px;border-bottom:1px solid rgba(255,255,255,.12);margin-bottom:12px}
+.brand b{display:block;font-size:20px;letter-spacing:-.01em;color:#fff}
+.brand span{font-size:12.5px;color:#BDB1E6}
+.side nav a{display:block;padding:7px 10px;border-radius:8px;color:#D9D0F5;text-decoration:none;font-size:13.5px;line-height:1.35}
+.side nav a:hover{background:rgba(255,255,255,.07);color:#fff}
+.side nav a.on{background:var(--magenta-600);color:#fff;font-weight:600}
+.side .grp{margin:16px 10px 4px;font-size:12px;color:#9C8FD0;font-weight:600}
+
+/* ---------- barra superior y búsqueda ---------- */
+.main{margin-left:var(--side);min-width:0;overflow-x:clip}
+.top{position:sticky;top:0;z-index:20;background:rgba(251,249,254,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);padding:12px 32px;display:flex;gap:12px;align-items:center}
+.menu-btn{display:none;border:1px solid var(--line);background:#fff;border-radius:10px;padding:8px 12px;font:inherit;color:var(--ink);cursor:pointer}
+.search{position:relative;flex:1;max-width:620px}
+.search input{width:100%;font:inherit;padding:11px 14px 11px 40px;border-radius:12px;border:1px solid var(--line);background:#fff;color:var(--ink)}
+.search svg{position:absolute;left:13px;top:50%;transform:translateY(-50%);width:18px;height:18px;stroke:var(--ink-soft)}
+.results{position:absolute;top:calc(100% + 6px);left:0;right:0;background:#fff;border:1px solid var(--line);border-radius:12px;box-shadow:0 18px 40px -18px rgba(36,22,99,.5);max-height:62vh;overflow:auto;display:none}
+.results.open{display:block}
+.results a{display:block;padding:10px 14px;text-decoration:none;color:var(--ink);border-bottom:1px solid var(--line)}
+.results a:last-child{border-bottom:0}
+.results a:hover,.results a.sel{background:var(--mist)}
+.results small{display:block;color:var(--ink-soft);font-size:12.5px}
+.results mark{background:var(--gold);color:var(--indigo-950);border-radius:3px;padding:0 2px}
+.results .none{padding:14px;color:var(--ink-soft)}
+.hint{font-size:12.5px;color:var(--ink-soft);white-space:nowrap}
+
+/* ---------- contenido ---------- */
+.wrap{max-width:980px;padding:34px 32px 90px}
+section{margin:0 0 64px}
+h1{font-size:clamp(28px,4vw,40px);line-height:1.15;letter-spacing:-.02em;margin:6px 0 14px;color:var(--indigo-950)}
+h2{font-size:clamp(23px,3vw,29px);line-height:1.2;letter-spacing:-.015em;margin:0 0 6px;color:var(--indigo-900)}
+h3{font-size:17.5px;margin:30px 0 8px;color:var(--indigo-800)}
+p{margin:0 0 12px;max-width:74ch}
+.lead{font-size:17px;color:var(--ink-soft);max-width:68ch}
+.sub{color:var(--ink-soft);max-width:70ch;margin-bottom:20px}
+ul,ol{padding-left:22px;margin:0 0 14px;max-width:74ch}
+li{margin:4px 0}
+.hero{background:linear-gradient(135deg,var(--indigo-950),var(--indigo-800) 60%,var(--violet-600));color:#fff;border-radius:22px;padding:38px 36px;margin-bottom:56px}
+.hero h1{color:#fff;margin-top:0}
+.hero p{color:#DDD3FA;max-width:60ch}
+.hero .quick{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:12px;margin-top:24px}
+.hero .quick a{display:block;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);border-radius:12px;padding:13px 15px;color:#fff;text-decoration:none;font-size:14px}
+.hero .quick a b{display:block;font-size:15px;margin-bottom:2px}
+.hero .quick a:hover{background:rgba(255,255,255,.18)}
+
+.table-scroll{overflow-x:auto;margin:10px 0 18px;border:1px solid var(--line);border-radius:var(--radius);background:var(--panel)}
+table{border-collapse:collapse;width:100%;font-size:14px;min-width:560px}
+th,td{text-align:left;padding:11px 14px;vertical-align:top;border-bottom:1px solid var(--line)}
+th{background:var(--panel-2);font-weight:600;color:var(--indigo-900);font-size:13.5px}
+tr:last-child td{border-bottom:0}
+td:first-child{font-weight:500}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:18px 20px;margin:14px 0}
+.card h3{margin-top:0}
+.pending{border:1.5px dashed var(--gold);background:#FFF9E8;border-radius:var(--radius);padding:14px 18px;margin:14px 0;color:#6B4A08}
+.pending b{color:#5A3D05}
+.tag{display:inline-block;font-size:12px;font-weight:600;padding:2px 9px;border-radius:99px;background:#FFF1CC;color:#7A5200;white-space:nowrap}
+.tag.ok{background:#DDF3E8;color:var(--ok)}
+.steps{counter-reset:s;list-style:none;padding:0;max-width:none;display:grid;gap:12px}
+.steps li{counter-increment:s;background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:16px 18px 16px 62px;position:relative;margin:0}
+.steps li::before{content:counter(s);position:absolute;left:16px;top:14px;width:32px;height:32px;border-radius:50%;background:var(--magenta-600);color:#fff;font-weight:700;display:grid;place-items:center}
+.mail{background:var(--indigo-950);color:#E9E3FA;border-radius:12px;padding:14px 18px;font-size:14px;margin:12px 0;max-width:74ch}
+.mail b{color:#fff}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin:14px 0}
+.stat{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px 16px}
+.stat b{display:block;font-size:22px;color:var(--magenta-600);line-height:1.2}
+.stat span{font-size:13px;color:var(--ink-soft)}
+
+/* ---------- filtros y acordeones ---------- */
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0 18px}
+.chip{font:inherit;font-size:13.5px;border:1px solid var(--line);background:#fff;color:var(--ink);padding:6px 13px;border-radius:99px;cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--indigo-800);border-color:var(--indigo-800);color:#fff}
+details.obj{background:var(--panel);border:1px solid var(--line);border-radius:12px;margin:8px 0}
+details.obj>summary{cursor:pointer;padding:14px 18px;font-weight:600;color:var(--indigo-900);list-style:none;display:flex;justify-content:space-between;gap:12px;align-items:center}
+details.obj>summary::-webkit-details-marker{display:none}
+details.obj>summary::after{content:"+";font-size:22px;color:var(--magenta-600);line-height:1}
+details.obj[open]>summary::after{content:"–"}
+details.obj[open]{border-color:var(--violet-600)}
+.obj-body{padding:0 18px 16px;display:grid;gap:10px}
+.obj-body .row b{display:block;font-size:13px;color:var(--ink-soft);font-weight:600}
+.obj-cat{font-size:12px;font-weight:500;color:var(--ink-soft);background:var(--mist);padding:2px 9px;border-radius:99px;flex:none}
+details.obj>summary>span:first-child{flex:1;min-width:0;overflow-wrap:anywhere}
+details.obj>summary::after{flex:none}
+@media (max-width:600px){details.obj>summary{flex-wrap:wrap}.obj-cat{order:-1}}
+.copy{font:inherit;font-size:13px;border:1px solid var(--violet-600);color:var(--violet-600);background:#fff;border-radius:8px;padding:5px 12px;cursor:pointer;justify-self:start}
+.copy:hover{background:var(--violet-600);color:#fff}
+.copy.done{background:var(--ok);border-color:var(--ok);color:#fff}
+.seg-select{font:inherit;padding:9px 12px;border-radius:10px;border:1px solid var(--line);background:#fff;color:var(--ink);margin:6px 0 4px;max-width:100%}
+.person{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px;margin:14px 0}
+.person .card{margin:0}
+.person h3{margin:0 0 2px}
+.person .role{color:var(--ink-soft);font-size:14px;margin-bottom:8px}
+.vgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:14px;margin:14px 0}
+.vcard{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;text-decoration:none;color:var(--ink);display:block}
+.vcard img{display:block;width:100%;aspect-ratio:16/9;object-fit:cover;background:var(--indigo-900)}
+.vcard span{display:block;padding:10px 14px 12px;font-size:14px}
+.vcard b{display:block;font-size:14.5px;color:var(--indigo-900)}
+.vcard:hover{border-color:var(--violet-600)}
+.foot{border-top:1px solid var(--line);padding-top:18px;color:var(--ink-soft);font-size:13.5px}
+.totop{position:fixed;right:18px;bottom:18px;background:var(--magenta-600);color:#fff;border:0;border-radius:99px;padding:10px 16px;font:inherit;font-size:13.5px;cursor:pointer;box-shadow:0 10px 24px -12px rgba(36,22,99,.7);display:none;z-index:15}
+.totop.show{display:block}
+
+@media (max-width:900px){
+  .side{transform:translateX(-100%);transition:transform .2s}
+  .side.open{transform:none}
+  .main{margin-left:0}
+  .menu-btn{display:block}
+  .top{padding:10px 14px}
+  .wrap{padding:24px 16px 80px}
+  .hero{padding:26px 20px}
+  .hint{display:none}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.side{transition:none}}
+@media print{
+  .side,.top,.totop,.chips,.copy,.seg-select{display:none!important}
+  .main{margin:0}
+  body{background:#fff;font-size:11.5px}
+  details.obj{break-inside:avoid}
+  details.obj>.obj-body{display:grid}
+  .hero{background:none;color:#000;border:1px solid #999}
+  .hero h1,.hero p{color:#000}
+  section{margin-bottom:28px}
+}
+</style>
+</head>
+<body>
+<aside class="side" id="side" aria-label="Índice">
+  <div class="brand"><b>Enabley</b><span>Playbook comercial · Partners LATAM</span></div>
+  <nav id="nav">
+    <div class="grp">Empezar</div>
+    <a href="#inicio">Resumen rápido</a>
+    <a href="#registro">Registrar un prospecto</a>
+    <a href="#equipo">Equipo y contactos</a>
+    <div class="grp">Calificar</div>
+    <a href="#senales">Cuándo ofrecer Enabley</a>
+    <a href="#calificacion">Cliente ideal y calificación</a>
+    <a href="#segmentos">Segmentos y sectores</a>
+    <div class="grp">Presentar</div>
+    <a href="#pitch">Enabley en una conversación</a>
+    <a href="#plataforma">Cómo funciona</a>
+    <a href="#funcionalidades">Funcionalidades</a>
+    <a href="#ia">Inteligencia artificial</a>
+    <a href="#integraciones">Integraciones</a>
+    <a href="#normativa">Normativa y constancias</a>
+    <div class="grp">Probar</div>
+    <a href="#casos">Casos de éxito</a>
+    <a href="#negocio">Caso de negocio</a>
+    <a href="#materiales">Videos y materiales</a>
+    <div class="grp">Cerrar</div>
+    <a href="#vender">Cómo vender</a>
+    <a href="#objeciones">Objeciones</a>
+    <a href="#competidores">Competidores</a>
+    <a href="#comercial">Modelo comercial</a>
+  </nav>
+</aside>
+
+<div class="main">
+  <div class="top">
+    <button class="menu-btn" id="menuBtn" aria-controls="side" aria-expanded="false">Índice</button>
+    <div class="search">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      <input id="q" type="search" placeholder="Buscar: SAP, presupuesto, retail, QR, DC-3…" autocomplete="off" aria-label="Buscar en el playbook">
+      <div class="results" id="results" role="listbox"></div>
+    </div>
+    <span class="hint">Atajo: / para buscar</span>
+  </div>
+
+  <main class="wrap">
+
+  <div class="hero" id="top">
+    <h1>Playbook comercial Enabley para partners en LATAM</h1>
+    <p>Todo lo que necesitas para llevar una oportunidad desde el primer contacto hasta la propuesta: qué decir, a quién ofrecerle, qué responder cuando dudan y a quién llamar en Enabley.</p>
+    <div class="quick">
+      <a href="#registro"><b>Registrar un prospecto</b>Un correo a Jaime y listo</a>
+      <a href="#objeciones"><b>Me pusieron una objeción</b>Respuestas listas para usar</a>
+      <a href="#segmentos"><b>Voy a visitar un sector</b>Dolores, caso ancla y nombres</a>
+      <a href="#negocio"><b>Armar el caso de negocio</b>Tres números del cliente</a>
+    </div>
+  </div>
+
+  <!-- ===== RESUMEN ===== -->
+  <section id="inicio">
+    <h2>Resumen rápido</h2>
+    <p class="sub">Para consultar en 10 segundos, en medio de una conversación con el cliente.</p>
+    <p><b>Qué es, en una frase.</b> Plataforma de capacitación, conocimiento y comunicación para el personal operativo (el equipo que no trabaja frente a una computadora): mobile-first, con acceso sin conexión y contenido creado con IA en minutos.</p>
+    <div class="table-scroll"><table>
+      <tr><th>Tema</th><th>Respuesta corta</th></tr>
+      <tr><td>Prueba más fuerte para abrir</td><td>Coca-Cola LATAM: 79% de ahorro en costos de capacitación y 88% más accesos a los cursos, con su red de embotelladores.</td></tr>
+      <tr><td>Modelo de cobro</td><td>Licencia por usuario con acceso pleno de la operación, sin límite mensual de usuarios activos. El costo por persona baja a medida que la operación crece.</td></tr>
+      <tr><td>Cuándo ofrecer</td><td>Red distribuida, alta rotación, personal sin correo corporativo, LMS heredado que se traba o exigencia de evidencia de capacitación.</td></tr>
+      <tr><td>Cómo registrar un prospecto</td><td>Correo a Jaime con el nombre de la empresa. Él verifica que ningún otro partner la haya registrado y, si está libre, queda a tu nombre.</td></tr>
+      <tr><td>A quién llamar</td><td>Jaime Izquierdo (ventas y alianzas) · Mauricio Valdez (Customer Success) · Giuseppe Mosello (VP de Customer Success).</td></tr>
+    </table></div>
+  </section>
+
+  <!-- ===== REGISTRO ===== -->
+  <section id="registro">
+    <h2>Registrar un prospecto</h2>
+    <p class="sub">Tres pasos. Hazlo antes de la primera reunión formal para que la oportunidad quede protegida a tu nombre.</p>
+    <ol class="steps">
+      <li><b>Envía un correo a Jaime</b> con el nombre de la empresa. Si tienes el nombre del contacto, el país y el sector, inclúyelos, pero lo único obligatorio es la empresa.</li>
+      <li><b>Jaime verifica</b> que ningún otro partner haya dado de alta a esa empresa. Si ya está registrada por otro partner, él te lo informa.</li>
+      <li><b>Si está libre, el lead queda a tu nombre</b> y pueden empezar a trabajarlo juntos.</li>
+    </ol>
+    <div class="mail">
+      <b>Para:</b> jaime.izquierdo@enabley.io<br>
+      <b>Asunto:</b> Registro de prospecto: [Nombre de la empresa]<br>
+      <b>Cuerpo:</b> Hola Jaime, quiero registrar a [empresa] ([país], [sector]). Contacto: [nombre y cargo, opcional]. Gracias.
+    </div>
+    <button class="copy" data-copy="Para: jaime.izquierdo@enabley.io&#10;Asunto: Registro de prospecto: [Nombre de la empresa]&#10;&#10;Hola Jaime, quiero registrar a [empresa] ([país], [sector]). Contacto: [nombre y cargo, opcional]. Gracias.">Copiar el correo</button>
+    <p style="margin-top:14px"><b>Condiciones comerciales.</b> Comisiones, márgenes y reglas de la relación están en el contrato de partner. Este playbook no las cubre.</p>
+  </section>
+
+  <!-- ===== EQUIPO ===== -->
+  <section id="equipo">
+    <h2>Equipo y contactos</h2>
+    <p class="sub">Tres personas respaldan cada oportunidad de un partner en LATAM: ventas y alianzas, Customer Success y liderazgo de entrega técnica.</p>
+    <div class="person">
+      <div class="card"><h3>Jaime Izquierdo</h3><div class="role">Director de Ventas y Alianzas LATAM · Sponsor ejecutivo</div>
+        <p>Registro de prospectos, precios, alianzas y relación ejecutiva con el cliente.</p>
+        <a href="mailto:jaime.izquierdo@enabley.io">jaime.izquierdo@enabley.io</a><br><span style="font-size:14px;color:var(--ink-soft)">+52 56 6023 6510</span></div>
+      <div class="card"><h3>Mauricio Valdez</h3><div class="role">Customer Success Manager LATAM</div>
+        <p>Implementación, seguimiento de proyectos entregados y adopción en el cliente.</p>
+        <a href="mailto:mauricio.valdez@enabley.io">mauricio.valdez@enabley.io</a><br><span style="font-size:14px;color:var(--ink-soft)">+52 55 3220 2289</span></div>
+      <div class="card"><h3>Giuseppe Mosello</h3><div class="role">VP de Customer Success · Liderazgo de entrega técnica</div>
+        <p>Entrega, equipo técnico del proyecto y escalamientos.</p>
+        <a href="mailto:giuseppe.mosello@enabley.io">giuseppe.mosello@enabley.io</a><br><span style="font-size:14px;color:var(--ink-soft)">+55 11 95025-5050</span></div>
+    </div>
+    <p><b>Regla para el partner.</b> Antes de comprometer precio, plazo de implementación, alcance de migración o roadmap con un cliente, valídalo con Jaime.</p>
+  </section>
+
+  <!-- ===== SEÑALES ===== -->
+  <section id="senales">
+    <h2>Cuándo ofrecer Enabley</h2>
+    <p class="sub">Si aparece uno o más de estos puntos en la conversación, vale la pena sacar el tema.</p>
+    <ul>
+      <li>LMS heredado lento, que se traba con carga o da reportes imprecisos.</li>
+      <li>Capacitación presencial suspendida por recorte de costos o por logística.</li>
+      <li>SAP SuccessFactors u otro LMS corporativo en uso, pero que no llega a la primera línea.</li>
+      <li>Contenido disperso en drives, wikis, PDFs y WhatsApp, sin saber quién lo leyó.</li>
+      <li>Creación de contenido repartida entre varias herramientas de autoría.</li>
+      <li>Red de franquiciatarios, distribuidores, contratistas o terceros por capacitar.</li>
+      <li>Apertura acelerada de sucursales, alta rotación o lanzamientos frecuentes de producto.</li>
+      <li>Reestructuración reciente con menos personal: más exigencia para quien se quedó.</li>
+      <li>Auditoría, norma obligatoria o certificación que exige evidencia (ver <a href="#normativa">Normativa y constancias</a>).</li>
+      <li>Una gran actualización de contenido en camino: la ventana ideal para migrar antes y no cargarlo dos veces.</li>
+      <li>Meta de reducción de merma o de tiempo promedio de atención anunciada por la dirección.</li>
+    </ul>
+  </section>
+
+  <!-- ===== CALIFICACIÓN ===== -->
+  <section id="calificacion">
+    <h2>Cliente ideal y calificación</h2>
+    <p class="sub">Cinco preguntas para decidir en la primera llamada si vale la pena invertir tiempo. Dos o más “sí” justifican registrar el prospecto.</p>
+    <div class="table-scroll"><table>
+      <tr><th>Pregunta</th><th>Buen ajuste cuando…</th><th>Señal de alerta</th></tr>
+      <tr><td>1. ¿Quién necesita capacitarse?</td><td>Personal operativo, de campo, de tienda, de planta o de ruta; una parte sin correo corporativo.</td><td>Casi todo el público trabaja en oficina con computadora.</td></tr>
+      <tr><td>2. ¿Cuántas personas son y en cuántos lugares?</td><td>300 colaboradores o más, en varias sucursales, plantas o países. Menos de 300 sirve si puede crecer por etapas.</td><td>Pocas personas, un solo sitio y sin planes de crecer.</td></tr>
+      <tr><td>3. ¿Hay rotación, aperturas o lanzamientos frecuentes?</td><td>Ingresos constantes, cambios de procedimiento o de producto cada trimestre.</td><td>Plantilla estable y contenido que casi no cambia.</td></tr>
+      <tr><td>4. ¿Hay red externa a capacitar?</td><td>Franquiciatarios, distribuidores, contratistas, agentes o embotelladores.</td><td>Solo empleados directos.</td></tr>
+      <tr><td>5. ¿Deben comprobar que la gente se capacitó?</td><td>Auditoría, norma obligatoria, certificaciones con vencimiento.</td><td>La capacitación es opcional y sin consecuencias.</td></tr>
+    </table></div>
+    <h3>Cuándo no es el mejor ajuste</h3>
+    <p>Si lo que el cliente busca es un catálogo de cursos de habilidades blandas para personal de oficina, hay competidores más enfocados en eso (ver <a href="#competidores">Competidores</a>). Enabley gana donde la operación necesita llegar a la primera línea y comprobar resultados.</p>
+    <div class="card">
+      <h3>Tamaño de referencia</h3>
+      <p><b>Desde 300 colaboradores</b> es un proyecto significativo para Enabley. Con menos personas también se puede trabajar si el proyecto es justificable y escalable: muchas cuentas empiezan con un grupo pequeño o un piloto y crecen por etapas. Ante la duda, registra el prospecto y consulta con Jaime.</p>
+    </div>
+  </section>
+
+  <!-- ===== SEGMENTOS ===== -->
+  <section id="segmentos">
+    <h2>Segmentos y sectores</h2>
+    <p class="sub">Dónde entra Enabley en cada sector, con la prueba que puedes citar. Las marcas globales son clientes de Enabley; confirma con el equipo si el proyecto incluye su operación en la región antes de mencionarlas como referencia local.</p>
+    <label for="segSel" style="font-size:14px;font-weight:500">Filtrar por sector</label><br>
+    <select id="segSel" class="seg-select"></select>
+    <div class="table-scroll"><table id="segTable">
+      <thead><tr><th>Sector</th><th>Dolores típicos</th><th>Dónde entra Enabley</th><th>Caso ancla y nombres</th></tr></thead>
+      <tbody id="segBody"></tbody>
+    </table></div>
+  </section>
+
+  <!-- ===== PITCH ===== -->
+  <section id="pitch">
+    <h2>Enabley en una conversación</h2>
+    <p>Enabley es una plataforma de aprendizaje, comunicación y gestión del conocimiento para organizaciones con operaciones complejas, distribuidas y mucho personal de primera línea. Más que capacitar, se vuelve una herramienta de trabajo en el momento en que la persona necesita ejecutar.</p>
+    <div class="card">
+      <h3>El pitch en 30 segundos</h3>
+      <p id="pitch30">En operaciones distribuidas, la mayor parte del personal trabaja lejos de un escritorio, pero el conocimiento sigue en drives, PDFs y grupos de WhatsApp. El resultado: conocimiento disperso, baja retención, actualizaciones lentas y ejecución inconsistente. Enabley centraliza ese conocimiento, lo entrega en el celular de la persona correcta cuando lo necesita y muestra a la gerencia quién accedió, quién entendió y quién está preparado. Con IA para crear contenido en minutos y responder dudas usando solo el material oficial de la empresa.</p>
+      <button class="copy" data-copy-id="pitch30">Copiar pitch</button>
+    </div>
+    <h3>El argumento que sostiene la venta</h3>
+    <p><b>La capacitación sola no genera recurrencia.</b> Si el colaborador ve la plataforma solo como el lugar de los cursos, el uso es esporádico y el engagement cae. Cuando la plataforma se vuelve herramienta de trabajo, el ciclo se invierte: más acceso, más engagement, capacitación más efectiva.</p>
+    <h3>Escala y credenciales</h3>
+    <div class="stats">
+      <div class="stat"><b>1M+</b><span>usuarios activos</span></div>
+      <div class="stat"><b>30+</b><span>países con operaciones</span></div>
+      <div class="stat"><b>25</b><span>idiomas, incluido español</span></div>
+      <div class="stat"><b>19</b><span>años, desde 2006</span></div>
+      <div class="stat"><b>ISO 27001</b><span>y GDPR</span></div>
+    </div>
+    <p>Se integra con SAP SuccessFactors, Workday, Cornerstone y Active Directory. Catálogo listo: más de 200 cursos en 15 categorías (disponibilidad en español <span class="tag">a confirmar</span>).</p>
+    <p><b>Clientes que puedes nombrar en LATAM hispana:</b> Coca-Cola LATAM, Techint, Bohn (México) y Axtel (México). Globales con presencia regional: Unilever, Heineken, Cargill, Abbott, Scania, Motorola, Stellantis.</p>
+  </section>
+
+  <!-- ===== PLATAFORMA ===== -->
+  <section id="plataforma">
+    <h2>Cómo funciona en la práctica</h2>
+    <p class="sub">Así se explica la plataforma a un director de operaciones en menos de dos minutos: el área publica una sola vez, la persona correcta lo recibe por puesto, sucursal y turno, y el gerente ve el resultado y quién se quedó atrás.</p>
+    <ol class="steps">
+      <li><b>Direccionamiento.</b> Rutas por puesto, sucursal, región, turno y equipo. Cada persona recibe lo que su función exige, no el catálogo completo.</li>
+      <li><b>Acceso.</b> App y navegador, en celular, tablet o computadora, con modo sin conexión y acceso sin correo corporativo. Resuelve al personal que no tiene correo de la empresa.</li>
+      <li><b>Lectura.</b> Avance, calificación y evolución por sucursal, función, región y gerente, en tiempo real. La IA señala dónde reforzar antes de que ocurra el error.</li>
+    </ol>
+    <h3>Los cuatro bloques de la plataforma</h3>
+    <div class="table-scroll"><table>
+      <tr><th>Bloque</th><th>Para qué sirve</th></tr>
+      <tr><td>Learning</td><td>Rutas por puesto, reglas de avance, inscripción automática, certificación y recertificación.</td></tr>
+      <tr><td>Knowledge</td><td>Procedimientos, políticas y documentos organizados y buscables, incluso por código QR en el punto de uso.</td></tr>
+      <tr><td>Communication</td><td>Comunicados, campañas y cambios de procedimiento al público correcto, con registro de quién recibió y quién leyó.</td></tr>
+      <tr><td>Intelligence</td><td>IA que crea contenido, responde dudas e interpreta datos, más indicadores por unidad.</td></tr>
+    </table></div>
+    <p><b>La tecnología no se implementa sola.</b> Cada cuenta tiene acompañamiento dedicado de Customer Success y de proyecto, además de un equipo de producto que recibe necesidades de la operación y las devuelve en el roadmap.</p>
+    <p><b>Frase para cerrar el tema:</b> <i>La plataforma es lo que se compra. La operación funcionando es lo que se construye.</i> Úsala cuando el cliente compare solo funcionalidades entre proveedores.</p>
+  </section>
+
+  <!-- ===== FUNCIONALIDADES ===== -->
+  <section id="funcionalidades">
+    <h2>Funcionalidades</h2>
+    <p class="sub">Cada funcionalidad con el dolor que resuelve y cómo demostrarla en pantalla. Para una demo enfocada, quédate con el área que trajo el cliente. La IA tiene su propia sección.</p>
+    <div class="chips" id="featChips" role="group" aria-label="Filtrar funcionalidades"></div>
+    <div class="table-scroll"><table>
+      <thead><tr><th>Funcionalidad</th><th>Dolor que resuelve</th><th>Cómo demostrarla</th></tr></thead>
+      <tbody id="featBody"></tbody>
+    </table></div>
+  </section>
+
+  <!-- ===== IA ===== -->
+  <section id="ia">
+    <h2>Inteligencia artificial en Enabley</h2>
+    <p class="sub">La IA aparece en tres frentes, cada uno para una persona distinta. Explícalos en este orden para evitar la confusión más común: que el cliente crea que es un chatbot genérico conectado a su empresa.</p>
+    <div class="table-scroll"><table>
+      <tr><th>Frente</th><th>Qué hace</th><th>Ganancia para vender</th></tr>
+      <tr><td>1. Para quien crea</td><td>El administrador sube un PPT o PDF y la IA genera las preguntas de evaluación. AI Studio arma un curso con la marca del cliente en minutos y genera video de capacitación.</td><td>Lo que hoy toma semanas pasa a minutos, sin productora y sin fila en T&amp;D.</td></tr>
+      <tr><td>2. Para quien gestiona</td><td>El gerente pregunta en lenguaje natural por avance, desempeño, grupos y certificaciones, y recibe la respuesta con liga al reporte y gráficos.</td><td>Elimina armar reportes a mano y da autonomía al gerente local.</td></tr>
+      <tr><td>3. Para quien ejecuta</td><td>El colaborador pregunta en medio del trabajo y recibe una respuesta generada solo con el contenido que tiene asignado.</td><td>Menos dudas repetidas al gerente, decisiones más rápidas y visibilidad de dónde falta contenido.</td></tr>
+    </table></div>
+    <div class="card"><b>Cuando pregunten “¿y si la IA inventa una respuesta?”</b> (lo van a preguntar en casi todas las reuniones): las respuestas del AI Companion se generan solo a partir del contenido asignado al alumno. El administrador elige qué materiales alimentan la IA y segmenta el acceso por perfil. Cuando se actualiza la fuente oficial, la respuesta se actualiza. No es un modelo abierto opinando sobre la empresa del cliente.</div>
+    <h3>Los 8 recursos de IA de la plataforma</h3>
+    <div class="table-scroll"><table>
+      <tr><th>Recurso</th><th>Grupo</th><th>Qué hace</th></tr>
+      <tr><td>AI Companion</td><td>Experiencia del alumno</td><td>Respuestas instantáneas solo con el contenido asignado. Paquete estándar: 3 interacciones por día por usuario; ilimitado tiene costo adicional.</td></tr>
+      <tr><td>AI Avatar</td><td>Experiencia del alumno</td><td>El usuario crea su avatar describiéndolo a la IA. Aumenta la identificación con la plataforma.</td></tr>
+      <tr><td>AI Auto Check</td><td>Experiencia del alumno</td><td>Corrige respuestas abiertas con calificación instantánea.</td></tr>
+      <tr><td>Quiz de chat con IA</td><td>Experiencia del alumno</td><td>La IA conversa con el alumno con preguntas graduales en lugar de un cuestionario estático.</td></tr>
+      <tr><td>Preguntas Mágicas</td><td>Creación de contenido</td><td>Genera preguntas de evaluación a partir del propio material. Incluido en el paquete principal.</td></tr>
+      <tr><td>Generador de evaluaciones</td><td>Creación de contenido</td><td>Crea evaluaciones sobre cualquier tema; carga de archivos en camino.</td></tr>
+      <tr><td>AI Studio</td><td>Creación de contenido</td><td>Curso con la marca del cliente en minutos y video a partir de un PDF. Disponible en enero de 2027, módulo con condición comercial propia.</td></tr>
+      <tr><td>Insights con IA</td><td>Eficiencia y gestión</td><td>Asistente para el gerente con ligas a reportes y resúmenes en gráficos.</td></tr>
+    </table></div>
+    <p><b>En la demo:</b> sube un PPT del propio cliente y genera las preguntas frente a él. Es el momento de mayor impacto de la presentación.</p>
+  </section>
+
+  <!-- ===== INTEGRACIONES ===== -->
+  <section id="integraciones">
+    <h2>Integraciones</h2>
+    <p class="sub">Enabley tiene APIs públicas para conectarse con los sistemas que el cliente ya usa. El tema aparece temprano con TI y suele destrabar la objeción de redundancia con el sistema de RR. HH.</p>
+    <p><b>Sistemas con los que se integra:</b> HRIS, HCM, ERP, Active Directory y SSO; SAP SuccessFactors, Workday, Cornerstone y Salesforce; nómina, sistemas corporativos y propietarios; herramientas de BI como Power BI.</p>
+    <div class="table-scroll"><table>
+      <tr><th>Camino</th><th>Cómo funciona</th><th>Cuándo usarlo</th></tr>
+      <tr><td>Desarrollada por el cliente</td><td>Enabley entrega las APIs y la documentación; el equipo de TI del cliente o un socio la desarrolla.</td><td>Cliente con TI propia que no quiere costo adicional. Envía la documentación en la reunión.</td></tr>
+      <tr><td>Desarrollada por Enabley</td><td>Enabley desarrolla, configura e implementa la integración como proyecto adicional, con precio propio.</td><td>Cliente sin equipo interno disponible. No prometas plazo ni precio en la reunión: levanta los sistemas y llévalo a dimensionamiento con Jaime.</td></tr>
+    </table></div>
+    <p><b>Lo que define el esfuerzo cuando la hace Enabley:</b> complejidad, número de sistemas, tipo de integración, frecuencia de sincronización, volumen de datos, reglas de negocio y necesidad de desarrollo específico.</p>
+    <p><b>Microsoft Teams y aulas virtuales.</b> Conecta actividades de Enabley con sesiones en Teams; contratación y costo se evalúan según el alcance. Las sesiones por Zoom están cubiertas por la licencia de Enabley; Teams requiere licencia del cliente.</p>
+    <p><b>Cómo conducir el tema.</b> Pregunta temprano qué sistema de RR. HH. usa el cliente y quién sería el responsable técnico. Comparte la <a href="https://api.prod.timetoknow.com/api/index.html" target="_blank" rel="noopener">documentación técnica de las APIs</a> en la misma reunión: acelera la validación técnica.</p>
+  </section>
+
+  <!-- ===== NORMATIVA ===== -->
+  <section id="normativa">
+    <h2>Normativa y constancias</h2>
+    <p class="sub">En LATAM, la exigencia de comprobar que el personal se capacitó es uno de los disparadores de compra más fuertes.</p>
+    <div class="card">
+      <h3>México: DC-3 y DC-4</h3>
+      <p>Las constancias DC-3 y DC-4 se generan con la función de <b>certificación</b> de Enabley: el colaborador completa la ruta, cumple la calificación mínima y la plataforma emite la constancia con su registro auditable. Confirma con Mauricio el formato exacto antes de prometerlo en una propuesta.</p>
+    </div>
+    <h3>Otros países</h3>
+    <p>La mecánica es la misma: certificado con calificación mínima, firma electrónica con contraseña del usuario, recertificación con aviso de vencimiento y reportes históricos descargables. Muy probablemente cubre lo que pide cada país, pero el formato de la constancia se valida caso por caso.</p>
+    <div class="table-scroll"><table>
+      <tr><th>País</th><th>Marco que suele exigir evidencia de capacitación</th><th>Estado</th></tr>
+      <tr><td>México</td><td>DC-3 y DC-4 (STPS)</td><td><span class="tag ok">Se resuelve con certificación</span></td></tr>
+      <tr><td>Colombia</td><td>Sistema de Gestión de Seguridad y Salud en el Trabajo (SG-SST)</td><td><span class="tag">a validar con Mauricio</span></td></tr>
+      <tr><td>Perú</td><td>Ley 29783 de Seguridad y Salud en el Trabajo</td><td><span class="tag">a validar con Mauricio</span></td></tr>
+      <tr><td>Chile</td><td>Ley 16.744 y obligación de informar riesgos</td><td><span class="tag">a validar con Mauricio</span></td></tr>
+      <tr><td>Argentina</td><td>Ley 19.587 de Higiene y Seguridad en el Trabajo</td><td><span class="tag">a validar con Mauricio</span></td></tr>
+    </table></div>
+    <p style="font-size:13.5px;color:var(--ink-soft)">Los marcos de la tabla son ejemplos orientativos; la exigencia exacta depende del sector y del tamaño de la empresa.</p>
+  </section>
+
+  <!-- ===== CASOS ===== -->
+  <section id="casos">
+    <h2>Casos de éxito</h2>
+    <p class="sub">Cita siempre el caso del sector más cercano al cliente: la evidencia de un par vale más que cualquier descripción de funcionalidad.</p>
+    <h3>Casos en LATAM hispana</h3>
+    <div class="card">
+      <h3>Coca-Cola LATAM · bebidas · red de embotelladores</h3>
+      <ul>
+        <li><b>Reto:</b> acelerar las capacidades de negocio de los socios embotelladores. Los programas anteriores se suspendieron porque los embotelladores consideraron demasiado alto el costo.</li>
+        <li><b>Solución:</b> un Learning Hub, la primera comunidad de aprendizaje digital de la empresa, sincrónica y asincrónica, disponible 24 horas. Se eligió tras un piloto con 600 participantes de 8 de los 10 embotelladores.</li>
+        <li><b>Resultados:</b> 79% de ahorro en costos de capacitación, 88% más accesos a los cursos y 65% menos tiempo dedicado a capacitar, sin perder eficacia.</li>
+        <li><b>Testimonio:</b> “Enabley nos ayudó con consistencia y flexibilidad a iniciar una comunidad formal de aprendizaje para acelerar nuestro negocio.” Esther Ruiz Isart, Coca-Cola LATAM. <a href="https://www.youtube.com/watch?v=a5uhF8_9NB8" target="_blank" rel="noopener">Ver video</a></li>
+        <li><a href="casos/CocaCola.pdf" target="_blank" rel="noopener">Descargar caso de estudio (PDF)</a></li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Bohn México · manufactura · refrigeración industrial y comercial</h3>
+      <ul>
+        <li><b>Reto:</b> su negocio depende de capacitar constantemente a distribuidores y clientes, algo que se hacía de forma presencial en varias ciudades. Con la pandemia, había que mantener la formación de otra manera.</li>
+        <li><b>Solución:</b> la plataforma de Enabley para llegar al mismo tiempo a equipos en distintas ubicaciones, sin depender de un salón.</li>
+        <li><b>Resultados:</b> más del doble de personas certificadas en cursos de refrigeración en el primer semestre de 2020 que en todo 2019 (cuando solo había cursos presenciales), grandes ahorros en costos de formación y más ubicaciones capacitadas al mismo tiempo.</li>
+        <li><b>Testimonio:</b> “Con la solución de Enabley podemos generar fácilmente contenido técnico.” Gildardo Yanez, Gerente de Capacitación, Bohn México. <a href="https://www.youtube.com/watch?v=EQ_64FnJN7s" target="_blank" rel="noopener">Ver video</a></li>
+        <li><a href="casos/Bohn.pdf" target="_blank" rel="noopener">Descargar caso de estudio (PDF)</a></li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Axtel · telecomunicaciones · México</h3>
+      <ul>
+        <li><b>Reto:</b> proceso de capacitación largo y complejo, reportes inconsistentes, creación de contenido difícil y poco engagement.</li>
+        <li><b>Solución:</b> plataforma intuitiva con creación rápida de contenido, reportes gerenciales ágiles e interfaz interactiva.</li>
+        <li><b>Resultados (2023):</b> 99.1% de participación en la formación, 7 puntos porcentuales más que el año anterior; 12.6 horas de capacitación promedio por colaborador; satisfacción general de 4.71 sobre 5.</li>
+        <li><b>Testimonio:</b> “Es mucho más fácil crear y realizar un seguimiento de la capacitación para que podamos mejorar más rápido.” Roberto Carlos Garza Muñiz, Especialista de Capacitación.</li>
+        <li><a href="casos/Axtel.pdf" target="_blank" rel="noopener">Descargar caso de estudio (PDF)</a></li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Techint · industria, ingeniería y construcción</h3>
+      <p>Cliente de Enabley en la región; úsalo como referencia de nombre en manufactura, construcción y energía. <span class="tag">a confirmar</span> la unidad del grupo, el alcance del proyecto y los resultados antes de citar cifras.</p>
+    </div>
+    <div class="card">
+      <h3>Abbott · farmacéutica</h3>
+      <p>Proyecto en Brasil y 9 países de América Latina, enfocado en la fuerza de ventas y áreas corporativas. <span class="tag">a confirmar</span> número de usuarios y resultados con Enabley antes de citarlo.</p>
+    </div>
+
+    <h3>Casos de referencia desde Brasil (documento en español)</h3>
+    <p>Son clientes de Brasil, pero los PDFs están en español y los números sirven como prueba en retail y telecomunicaciones.</p>
+    <div class="card">
+      <h3>Vivo · telecomunicaciones · Grupo Telefónica</h3>
+      <ul>
+        <li><b>Reto:</b> capacitar a más de 130 mil personas (empleados y empresas colaboradoras) con una plataforma más accesible, ágil, innovadora y robusta.</li>
+        <li><b>Solución:</b> atención al cliente (call center), comercial (tiendas y revendedores) y operaciones técnicas (equipos de campo e instaladores), en su mayoría sin escritorio. Cerca de 2 millones de horas de formación al año.</li>
+        <li><b>Resultados:</b> migración de más de 2,900 cursos, 7,062 clases y 130 mil estudiantes en 3 meses; 206% más accesos únicos por mes; 62% menos horas de capacitación con más adherencia gracias al microaprendizaje; satisfacción de 4.8 sobre 5; más de 15 paneles en Power BI y más de 15 herramientas de accesibilidad.</li>
+        <li><a href="casos/Vivo.pdf" target="_blank" rel="noopener">Descargar caso de estudio (PDF)</a></li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Chilli Beans · retail · red de gafas y accesorios</h3>
+      <ul>
+        <li><b>Reto:</b> capacitar a más de 4,000 empleados sobre colecciones nuevas cada semana, con medición individual de cada persona. Antes usaban una página extranet que no lo permitía.</li>
+        <li><b>Solución:</b> app móvil para que los equipos de tienda se capaciten en cualquier momento y los gerentes sigan los informes en tiempo real.</li>
+        <li><b>Resultados:</b> 83% menos tiempo dedicado a visualizar los contenidos, 300% más participación y más de 6 mil certificados emitidos.</li>
+        <li><a href="casos/ChilliBeans.pdf" target="_blank" rel="noopener">Descargar caso de estudio (PDF)</a></li>
+      </ul>
+    </div>
+
+    <h3>Casos globales para reforzar</h3>
+    <div class="table-scroll"><table>
+      <tr><th>Cliente</th><th>Sector y país</th><th>Resultado principal</th><th>Úsalo cuando</th></tr>
+      <tr><td>Codimar</td><td>Manufactura, España</td><td>52% más calidad de fabricación, 50% menos tiempo de entrega, 35% menos costos laborales</td><td>Planta industrial con mejora continua (Lean Six Sigma, QR en piso, presencial + e-learning)</td></tr>
+      <tr><td>Omega 2011</td><td>Seguridad privada, más de 10 países</td><td>Onboarding de 5 meses a 1 mes, 80% menos costo de capacitación, 10% más retención</td><td>Personal sin computadora ni internet en el sitio: tabletas compartidas</td></tr>
+      <tr><td>MSIG Insurance</td><td>Seguros, 46 países, más de 40 mil empleados</td><td>Una sola base de contenido para empleados, agentes independientes y clientes</td><td>Servicios financieros con regulación y red de agentes</td></tr>
+      <tr><td>Adin Dental Implants</td><td>Salud, red global de distribuidores</td><td>Fuente única de información en varios idiomas para toda la red</td><td>Fabricante con distribuidores independientes en varios países</td></tr>
+      <tr><td>Maytronics</td><td>Manufactura, Israel</td><td>Más que duplicó la licencia inicial a los 4 meses</td><td>Cliente que teme un proyecto largo sin resultados</td></tr>
+      <tr><td>GlassesUSA.com (<a href="casos/GlassesUSA.pdf" target="_blank" rel="noopener">PDF</a>)</td><td>Retail en línea, Estados Unidos</td><td>25% más eficiencia en onboarding y menos tiempo de capacitación</td><td>Producto que cambia rápido y equipos en varios países</td></tr>
+    </table></div>
+
+    <h3>Más casos en el sitio de Enabley</h3>
+    <p>La página de <a href="https://enabley.io/es/casos-practicos" target="_blank" rel="noopener"><b>casos de éxito de Enabley</b></a> reúne todos los casos publicados con cifras y detalle. Además de los de arriba, incluye a Tigo (energía solar), Kavim (transporte público, Israel), Bezeq online (call center, Israel), Intuitus (seguridad en estadios, Reino Unido) y Mental Health First Aid England. Revísala antes de una reunión para elegir el más cercano al sector del cliente.</p>
+    <p><b>Para completar:</b> clientes de México, Colombia, Chile, Perú y Centroamérica que el equipo de Enabley autorice a citar, con su número principal.</p>
+  </section>
+
+  <!-- ===== NEGOCIO ===== -->
+  <section id="negocio">
+    <h2>Cómo armar el caso de negocio</h2>
+    <p class="sub">Lo que más acelera una decisión no es la demo: es que el cliente vea su propio dinero en la cuenta. Tres palancas, todas con números que el cliente ya tiene.</p>
+    <div class="table-scroll"><table>
+      <tr><th>Palanca</th><th>Por qué importa</th><th>Números que pides</th><th>Fórmula</th></tr>
+      <tr><td>Costo de integrar</td><td>Cada día que un nuevo colaborador pasa en inducción es un día de nómina sin productividad plena.</td><td>Total de colaboradores, ingresos por año, salario promedio de ingreso</td><td>Días ahorrados por ingreso × costo del día × ingresos por año = ahorro anual</td></tr>
+      <tr><td>Merma y pérdidas</td><td>En retail, la merma es un porcentaje de las ventas. Parte es procedimiento mal ejecutado, es decir, capacitación que no llegó.</td><td>Ventas brutas, índice de merma actual, promedio del sector</td><td>Cada 0.1 punto de merma recuperado × ventas = ahorro anual</td></tr>
+      <tr><td>Velocidad de campaña</td><td>El tiempo entre la decisión del corporativo y la ejecución en el anaquel. Ese número solo existe dentro del cliente.</td><td>Número de sucursales y ciudades, campañas por año, días entre decisión y ejecución</td><td>Días recuperados por campaña × campañas por año = días de venta adicionales</td></tr>
+    </table></div>
+    <h3>Ejemplo ilustrativo: cadena de retail con 19,000 colaboradores</h3>
+    <p>Cifras de referencia en USD para mostrar la lógica. Reemplázalas siempre por los números del cliente.</p>
+    <div class="table-scroll"><table>
+      <tr><th>Concepto</th><th>Valor</th></tr>
+      <tr><td>Colaboradores</td><td>19,000</td></tr>
+      <tr><td>Ingresos por año</td><td>6,000</td></tr>
+      <tr><td>Salario de ingreso</td><td>USD 450 al mes (USD 675 con cargas sociales)</td></tr>
+      <tr><td>Costo del día de trabajo</td><td>USD 31</td></tr>
+      <tr><td>Días ahorrados por ingreso</td><td>6 (de 7 días de inducción a 1)</td></tr>
+      <tr><td>Ahorro por ingreso</td><td>USD 186</td></tr>
+      <tr><td><b>Ahorro anual</b></td><td><b>USD 1.1 millones (36,000 días, unas 164 personas-año)</b></td></tr>
+    </table></div>
+    <p>En la palanca de merma, con ventas de USD 1,000 millones, cada 0.1 punto recuperado vale USD 1 millón al año. Usa el índice de la asociación de retail o de prevención de pérdidas del país del cliente como referencia de sector.</p>
+    <p><b>Cómo usarlo en campo.</b> Pide tres números en la reunión: total de colaboradores, ingresos por año y salario promedio de ingreso. Con eso calculas, frente a él, cuántos días de nómina se van hoy en inducción. Es el argumento más fuerte porque el número es suyo, no tuyo.</p>
+  </section>
+
+  <!-- ===== MATERIALES ===== -->
+  <section id="materiales">
+    <h2>Videos y materiales</h2>
+    <p class="sub">Un cliente contando su resultado con sus propias palabras vale más que cualquier diapositiva.</p>
+    <h3>Videos</h3>
+    <div class="vgrid" id="videoGrid"></div>
+    <h3>Casos de estudio en PDF (español)</h3>
+    <div class="table-scroll"><table>
+      <tr><th>Caso</th><th>Para qué usarlo</th></tr>
+      <tr><td><a href="casos/CocaCola.pdf" target="_blank" rel="noopener">Coca-Cola LATAM</a></td><td>Redes de socios, embotelladores y distribuidores</td></tr>
+      <tr><td><a href="casos/Bohn.pdf" target="_blank" rel="noopener">Bohn México</a></td><td>Manufactura y capacitación de distribuidores</td></tr>
+      <tr><td><a href="casos/Axtel.pdf" target="_blank" rel="noopener">Axtel México</a></td><td>Telecomunicaciones y adopción (99.1% de participación)</td></tr>
+      <tr><td><a href="casos/Vivo.pdf" target="_blank" rel="noopener">Vivo</a></td><td>Operaciones masivas con más de 130 mil personas, accesibilidad y Power BI</td></tr>
+      <tr><td><a href="casos/ChilliBeans.pdf" target="_blank" rel="noopener">Chilli Beans</a></td><td>Retail con colecciones frecuentes y medición individual</td></tr>
+      <tr><td><a href="casos/GlassesUSA.pdf" target="_blank" rel="noopener">GlassesUSA.com</a></td><td>Onboarding y productos que cambian rápido</td></tr>
+    </table></div>
+    <h3>Más enlaces</h3>
+    <ul>
+      <li><a href="https://enabley.io/es/casos-practicos" target="_blank" rel="noopener">Casos de éxito en enabley.io</a>: todos los casos publicados, en español.</li>
+      <li><a href="https://www.youtube.com/@EnableyDeskless" target="_blank" rel="noopener">Canal de YouTube de Enabley</a>: contenido sobre personal deskless.</li>
+    </ul>
+    <div class="pending"><b>Próximamente:</b> más videos en español y el catálogo de cursos en español.</div>
+  </section>
+
+  <!-- ===== VENDER ===== -->
+  <section id="vender">
+    <h2>Cómo vender</h2>
+    <p class="sub">La ruta que funciona: identificar la señal, descubrir el escenario, cuantificar el dolor, mostrar la aplicación con el caso del sector y cerrar el siguiente paso con fecha.</p>
+    <h3>Preguntas de discovery</h3>
+    <p>En orden: escenario, dolor cuantificado, criterio de decisión y ruta de compra.</p>
+    <div class="table-scroll"><table>
+      <tr><th>Pregunta</th><th>Para qué sirve</th></tr>
+      <tr><td>¿Cuántas personas necesitan capacitarse hoy, y cuántas trabajan fuera de una oficina?</td><td>Dimensiona el público deskless.</td></tr>
+      <tr><td>¿Qué públicos distintos tienen: propios, franquiciatarios, distribuidores, terceros, clientes?</td><td>Abre estructura multinivel y subcuentas.</td></tr>
+      <tr><td>¿Qué plataforma usan hoy y desde cuándo? ¿Qué motivó esta conversación ahora?</td><td>Identifica la señal de compra.</td></tr>
+      <tr><td>¿Hay un sistema de RR. HH. o LMS corporativo que debe seguir siendo la fuente oficial?</td><td>Define si la conversación es de reemplazo o de convivencia. Cambia todo el discurso.</td></tr>
+      <tr><td>¿Cómo producen el contenido hoy, y por cuántas herramientas pasa antes de llegar al colaborador?</td><td>Abre creación con IA y constructor unificado.</td></tr>
+      <tr><td>¿Cuántos ingresos tienen al año y cuántos días tarda una persona en ser productiva?</td><td>Los dos números que abren el cálculo de ROI. Pídelos siempre.</td></tr>
+      <tr><td>¿Cuánto tiempo pasa entre decidir comunicar algo y que toda la operación lo reciba?</td><td>Abre la palanca de velocidad de campaña.</td></tr>
+      <tr><td>¿Cómo saben que la información se leyó y se entendió, no solo que se envió?</td><td>Abre evaluaciones, bloqueos y firma electrónica.</td></tr>
+      <tr><td>¿Cuántos cursos logran lanzar al año hoy?</td><td>Abre AI Studio y creación rápida.</td></tr>
+      <tr><td>¿Cuántas horas al mes se van en armar reportes a mano?</td><td>Abre dashboards e insights con IA.</td></tr>
+      <tr><td>¿Cuál es su índice de merma y cómo se compara con el sector?</td><td>En retail, cada 0.1 punto vale millones. Abre la segunda palanca.</td></tr>
+      <tr><td>¿Qué tasa de finalización tienen las capacitaciones obligatorias y qué pasa con quien no termina?</td><td>Abre cumplimiento y recordatorios.</td></tr>
+      <tr><td>Si cambiaran de plataforma, ¿qué requisitos son innegociables?</td><td>Define el criterio de decisión.</td></tr>
+      <tr><td>¿Quién más tiene que decir que sí, además de ti? ¿Cuándo se arma el presupuesto del siguiente ciclo?</td><td>Mapea la ruta de compra.</td></tr>
+      <tr><td>Hoy su plataforma, ¿es un lugar donde se toman cursos o una herramienta que la persona abre a mitad del trabajo?</td><td>Lleva a la tesis de recurrencia, el corazón del pitch.</td></tr>
+      <tr><td>Si el gerente regional quisiera saber ahora qué sucursales están listas para la próxima campaña, ¿podría averiguarlo solo?</td><td>Lleva al dashboard jerárquico.</td></tr>
+    </table></div>
+    <h3>Frases que funcionan</h3>
+    <ul>
+      <li>“Trabajamos con operaciones distribuidas que necesitan asegurar que un cambio de procedimiento llegue a toda la red y se entienda, no solo que se envíe.”</li>
+      <li>“La capacitación sola no genera recurrencia. Mientras la plataforma sea solo el lugar de los cursos, el acceso va a ser esporádico. Nosotros entramos como herramienta de trabajo.”</li>
+      <li>“No reemplazamos su registro de RR. HH. Resolvemos la ejecución en la primera línea.”</li>
+      <li>“Dame tres números: colaboradores, ingresos por año y salario promedio de ingreso. Con eso te muestro cuánto les está costando hoy la inducción.”</li>
+      <li>“Posponer la decisión no reduce la inversión. Pospone el resultado.”</li>
+    </ul>
+    <h3>Vocabulario</h3>
+    <p><b>Usa:</b> tiempo de inducción, estandarización entre sucursales, adopción, evidencia de cumplimiento, retrabajo, preparación de la red, dudas en el punto de venta, rotación, merma, días recuperados.</p>
+    <p><b>Evita en el primer acercamiento:</b> LXP, KFS, hub de conocimiento, capa de ejecución, microlearning. Son términos internos: funcionan en la demo, no en el primer contacto.</p>
+    <h3>Kit para una reunión</h3>
+    <ol>
+      <li><b>Antes:</b> abre el sector del cliente, lee los dolores y apréndete dos clientes del sector para citar. Elige el caso ancla.</li>
+      <li><b>Apertura:</b> usa una de las frases y haz las dos últimas preguntas de discovery. Deja que el cliente describa el dolor antes de cualquier demo.</li>
+      <li><b>Demo:</b> enfócate en el área que trajo y sigue la columna “Cómo demostrarla”. Si puedes, sube un material del propio cliente y genera preguntas con IA frente a él.</li>
+      <li><b>Cierre:</b> arma el caso de negocio con sus números, propone un kickoff con público inicial y de 3 a 5 indicadores, y deja claro el siguiente paso con fecha.</li>
+    </ol>
+  </section>
+
+  <!-- ===== OBJECIONES ===== -->
+  <section id="objeciones">
+    <h2>Objeciones y cómo responder</h2>
+    <p class="sub">Cada objeción abre con lo que hay detrás, sigue con la respuesta recomendada y cierra con la prueba a usar. Filtra por tema o usa el buscador de arriba.</p>
+    <div class="chips" id="objChips" role="group" aria-label="Filtrar objeciones"></div>
+    <div id="objList"></div>
+  </section>
+
+  <!-- ===== COMPETIDORES ===== -->
+  <section id="competidores">
+    <h2>Competidores en LATAM hispana</h2>
+    <p class="sub">Los competidores que más aparecen en la región venden catálogo de cursos y desarrollo de habilidades para el corporativo; Enabley gana en la operación de primera línea. No inventes características de un competidor en una reunión: lo marcado <span class="tag">a confirmar</span> se valida con el equipo de Enabley o en una demo antes de usarlo.</p>
+    <div class="table-scroll"><table>
+      <tr><th>Competidor</th><th>Qué es</th><th>Dónde gana</th><th>Cómo posicionar a Enabley</th></tr>
+      <tr><td><a href="https://www.laprensa.hn/teinteresa/honduras-ubits-crecer-competencias-empresas-FH17328937" target="_blank" rel="noopener">UBITS</a> (Colombia)</td><td>Plataforma de capacitación corporativa fundada en 2018, con presencia en 15 países; mercados principales: Colombia, Chile y México. Clientes citados en prensa: Falabella, Sodimac, Cencosud, Alsea, Gasco, Terpel.</td><td>Catálogo amplio de habilidades blandas, negocio y tecnología, con contenidos de aliados como TED y Wobi.</td><td>Su fuerza es el catálogo para el corporativo. Pregunta si la comparación es para la oficina o para la tienda, la planta o el campo. Enabley resuelve contenido propio de la operación, QR en el punto de ejecución, modo sin conexión y evidencia auditable. App offline de UBITS: <span class="tag">a confirmar</span></td></tr>
+      <tr><td><a href="https://gestion.pe/economia/empresas/crehana-y-su-apuesta-con-la-inteligencia-artificial-y-porque-el-unicornio-no-esta-en-sus-planes-noticia/" target="_blank" rel="noopener">Crehana</a> (Perú)</td><td>Plataforma de aprendizaje convertida en HR tech: suma desempeño y engagement (compró Acsendo, Wormhole y Talentocloud) y agentes de IA. Más de 1,220 clientes; México y Colombia son sus mercados más grandes.</td><td>Suite de talento completa (aprendizaje, desempeño, clima) con IA para operar la plataforma.</td><td>Compite con RR. HH. y el corporativo, no con operaciones. Posiciona a Enabley como la capa de ejecución de la primera línea que convive con la suite de talento.</td></tr>
+      <tr><td>isEazy (España)</td><td>E-learning con herramientas de autoría, LMS, biblioteca de habilidades blandas y gamificación. Presencia en América Latina.</td><td>Creación de contenido y catálogo listo.</td><td>Diferencia por foco deskless (sin conexión, QR, acceso sin correo) y por la IA que crea contenido a partir del material del propio cliente.</td></tr>
+      <tr><td>LMS globales (SAP SuccessFactors, Cornerstone, Docebo)</td><td>Sistema de registro de RR. HH. o LMS de la casa matriz.</td><td>Gobierno, compliance y currículum institucional.</td><td>No compitas: convive. Enabley llega a la primera línea y envía los datos al sistema de registro.</td></tr>
+      <tr><td>WhatsApp, correo y Teams</td><td>El competidor de facto en casi toda operación.</td><td>Ya está en el celular de todos y no cuesta.</td><td>No hay evidencia de lectura ni de comprensión, ni recertificación, ni reporte por sucursal. Pregunta: “¿Cómo comprueban, por colaborador y por sucursal, quién terminó y quién entendió cuando la capacitación pasa por WhatsApp?”</td></tr>
+    </table></div>
+    <p><b>Argumentos de diferenciación que sí puedes afirmar:</b> app con modo sin conexión real, QR en el puesto de trabajo, estructura multinivel para franquicias y distribuidores, acceso sin correo corporativo, firma electrónica con contraseña y recertificación automática, IA que responde solo con el contenido oficial del cliente.</p>
+  </section>
+
+  <!-- ===== COMERCIAL ===== -->
+  <section id="comercial">
+    <h2>Modelo comercial y licenciamiento</h2>
+    <p class="sub">Enabley no se posiciona como un producto con un precio por usuario. El precio por usuario es la base; la arquitectura completa combina software, IA, servicios, soporte, integraciones, Boosters y add-ons. Entenderla te permite construir la propuesta con el cliente en vez de reducir la conversación a un precio.</p>
+
+    <h3>Enabley Core: la base de todo proyecto</h3>
+    <p>Licencias por usuario en modelo de asientos: cada colaborador que usa la plataforma tiene una licencia. Si la empresa contrata para 10,000 colaboradores, el proyecto se estructura con 10,000 licencias.</p>
+    <p><b>Incluye:</b> entorno de aprendizaje y app móvil; gestión de usuarios, grupos, puestos, unidades y jerarquías; rutas, cursos y capacitaciones; contenidos y evaluaciones; comunicación con colaboradores; reportes y dashboards; administración estándar; IA incorporada con franquicia de uso.</p>
+    <p><b>Lo que mueve el precio unitario:</b> cantidad de usuarios, plazo del contrato, alcance del proyecto, módulos adicionales, complejidad de la operación y condiciones negociadas.</p>
+
+    <h3>Precios: se cotizan con el equipo de Enabley</h3>
+    <p>Este playbook no publica precios. El valor de un proyecto depende de la combinación de usuarios, plazo, alcance y módulos, así que Jaime lo cotiza con cada oportunidad. Lo que sí puedes hacer en la primera conversación es juntar los datos para que la cotización salga rápido.</p>
+    <div class="card">
+      <h3>Qué enviar a Jaime para pedir una cotización</h3>
+      <ul>
+        <li>Empresa, país y sector.</li>
+        <li>Número de colaboradores a capacitar y en cuántas sucursales, plantas o países.</li>
+        <li>Públicos: solo empleados, o también franquiciatarios, distribuidores o contratistas.</li>
+        <li>Sistema de RR. HH. o LMS que usan hoy y si necesitan integración.</li>
+        <li>Nivel de soporte esperado (el cliente atiende a su gente o Enabley atiende al usuario final).</li>
+        <li>Módulos de interés: IA, gamificación, comunicación masiva, certificaciones.</li>
+        <li>Fecha deseada de arranque y si prefieren empezar con un piloto.</li>
+      </ul>
+      <button class="copy" type="button" data-copy="Para: jaime.izquierdo@enabley.io&#10;Asunto: Solicitud de cotización: [Empresa]&#10;&#10;Hola Jaime, necesito cotizar a [empresa] ([país], [sector]).&#10;- Colaboradores a capacitar: [número] en [sucursales/plantas/países]&#10;- Públicos: [empleados / franquiciatarios / distribuidores / contratistas]&#10;- Sistema de RR. HH. o LMS actual: [cuál] · Integración: [sí/no]&#10;- Soporte esperado: [el cliente atiende / Enabley atiende al usuario final]&#10;- Módulos de interés: [IA, gamificación, comunicación, certificaciones]&#10;- Arranque deseado: [fecha] · Piloto: [sí/no]&#10;Gracias.">Copiar solicitud de cotización</button>
+    </div>
+    <p><b>Empezar pequeño y crecer.</b> Si el cliente tiene menos de 300 personas o duda del tamaño del compromiso, propón un grupo piloto con una meta clara. Es una forma habitual de arrancar y escalar después.</p>
+
+    <h3>Niveles de soporte</h3>
+    <div class="table-scroll"><table>
+      <tr><th>Nivel</th><th>Qué cubre</th><th>Para quién</th></tr>
+      <tr><td>Gold (2nd Level Support)</td><td>Soporte a los administradores internos. El cliente atiende primero a sus colaboradores y escala a Enabley lo técnico o especializado.</td><td>Clientes con equipo de T&amp;D o RR. HH. estructurado.</td></tr>
+      <tr><td>Platinum (1st Level End User Support)</td><td>Enabley atiende también al usuario final, directamente al colaborador.</td><td>Operaciones grandes que quieren quitar carga al equipo interno.</td></tr>
+    </table></div>
+
+    <h3>Implementación y Customer Success</h3>
+    <p>La implementación es un costo inicial de proyecto, separado de la licencia recurrente: kickoff y configuración, estructura de unidades, puestos, grupos y jerarquías, carga inicial de usuarios y migración de contenido, apoyo en las rutas, capacitación de administradores y preparación del Go Live. Después, Customer Success acompaña la adopción: buenas prácticas, estructura de iniciativas, recomendaciones de engagement, análisis de uso, evolución de la estrategia y nuevas funcionalidades. Operación, administración o BPO adicionales se contratan como Professional Services.</p>
+
+    <h3>Boosters: módulos que amplían el Core</h3>
+    <div class="table-scroll"><table>
+      <tr><th>Booster</th><th>Qué agrega</th><th>Cuándo proponerlo</th></tr>
+      <tr><td>Engagement Booster</td><td>Gamificación, monedas virtuales, recompensas, campañas y reconocimiento</td><td>Cliente que ya tuvo una plataforma donde nadie entraba, o que necesita adopción voluntaria</td></tr>
+      <tr><td>Outreach Booster</td><td>Alcance a colaboradores más allá de la navegación dentro de la plataforma</td><td>Operación donde la comunicación debe llegar a quien no abre la plataforma por su cuenta</td></tr>
+      <tr><td>AI Booster</td><td>Más capacidad o funcionalidades de IA que el paquete estándar</td><td>Cliente que vio la demo de IA y quiere usarla de forma intensiva</td></tr>
+      <tr><td>Knowledge Booster</td><td>Gestión del conocimiento corporativo accesible en el contexto de trabajo</td><td>Cuando el dolor es conocimiento disperso, no capacitación</td></tr>
+    </table></div>
+
+    <h3>Add-ons</h3>
+    <div class="table-scroll"><table>
+      <tr><th>Add-on</th><th>Qué es</th><th>Cuándo proponerlo</th></tr>
+      <tr><td>SMS Package</td><td>Paquete de SMS para comunicación y engagement</td><td>Operación que necesita canales fuera de la app y del correo</td></tr>
+      <tr><td>White Label Package</td><td>Plataforma con la marca, logo e identidad del cliente</td><td>Cliente que quiere su propia “universidad corporativa”</td></tr>
+      <tr><td>3rd-party Content</td><td>Contenido de terceros según catálogo o socio</td><td>Necesita cubrir temas transversales rápido</td></tr>
+      <tr><td>Sub Accounts</td><td>Cuentas subordinadas con gobierno en la matriz y autonomía en cada estructura</td><td>Franquicias, unidades de negocio, grupos, distribuidores</td></tr>
+      <tr><td>Professional Services</td><td>Operación, administración, gestión de contenido, migración, consultoría, BPO</td><td>Cliente con equipo reducido que no tiene capacidad para operar</td></tr>
+      <tr><td>AI Credits Top-up</td><td>Créditos adicionales de IA</td><td>Cuando se supera el volumen contratado. Es consumo, no funcionalidad nueva</td></tr>
+    </table></div>
+
+    <h3>Cómo se cobra la IA</h3>
+    <p>La lógica separa funcionalidad de volumen: la IA incluida en el Core trae una franquicia de uso; el AI Booster amplía las funcionalidades; los AI Credits agregan volumen.</p>
+
+    <h3>Licencia por usuario frente a usuario activo</h3>
+    <div class="table-scroll"><table>
+      <tr><th></th><th>Usuario activo con límite mensual</th><th>Acceso pleno de la operación</th></tr>
+      <tr><td>Cobertura en una operación de 19,000 personas</td><td>10,000; quedan fuera 9,000</td><td>19,000, siempre el 100%</td></tr>
+      <tr><td>Comunicación masiva</td><td>Inviable</td><td>Una sola publicación llega a todos</td></tr>
+      <tr><td>Campañas y procedimientos</td><td>No llegan el mismo día a toda la operación</td><td>Llegan a toda la red el mismo día</td></tr>
+      <tr><td>Gestión de RR. HH.</td><td>Administra una fila de acceso</td><td>Precio fijo y previsible por operación</td></tr>
+      <tr><td>Costo por persona cubierta</td><td>Más alto</td><td>Cerca de 30% menor, y baja al crecer la operación</td></tr>
+    </table></div>
+    <p><b>La frase que resuelve la objeción de precio:</b> la plataforma tiene que ser donde se resuelve la duda, y limitar el acceso trabaja en contra. En el modelo de asientos, el costo por persona baja conforme crece la operación.</p>
+    <p>Comisiones y márgenes del partner están en el contrato. Ninguna cifra se presenta a un cliente sin confirmarla antes con Jaime.</p>
+  </section>
+
+  <div class="foot">
+    <p>Adaptado del playbook comercial de Enabley Brasil, con casos y referencias de LATAM hispana. El ejemplo de caso de negocio en USD es ilustrativo. Precios, roadmap y alcance de migración se confirman con el equipo de Enabley antes de cualquier compromiso con un cliente.</p>
+    <p>Dudas sobre este playbook: <a href="mailto:jaime.izquierdo@enabley.io">jaime.izquierdo@enabley.io</a></p>
+  </div>
+
+  </main>
+</div>
+<button class="totop" id="totop" aria-label="Volver arriba">Subir</button>
+<script>
+/* ============ DATOS ============ */
+const SEG = [
+ ["Retail y autoservicio","Red con aperturas y cierres constantes; alta rotación; campañas y precios que deben llegar el mismo día; merma; personal sin correo.","Inducción corta y medible; campañas publicadas una vez por sucursal, puesto y turno; dashboard por sucursal y regional; QR en piso de venta y almacén.","Axtel (participación 99.1%) como prueba de adopción; Motorola."],
+ ["Franquicias","Estandarizar atención en unidades no propias; franquiciatario con demasiada o poca autonomía; lentitud al lanzar producto; matriz sin visibilidad.","Autonomía del franquiciatario sin ver datos ajenos; gobierno de marca con reportes consolidados y segregados; rutas por función; clases en vivo para lanzamientos.","Coca-Cola LATAM (red de socios que no son empleados directos)."],
+ ["Alimentos y bebidas","Red de embotelladores y distribuidores; programas tradicionales caros; estandarizar procesos y marca entre socios.","Comunidad de aprendizaje para socios; certificación para comprobar cumplimiento contractual; contenido multiidioma regional.","Coca-Cola LATAM: 79% de ahorro y 88% más accesos; Heineken, Unilever."],
+ ["Manufactura","Capacitación obligatoria de seguridad con evidencia; contratistas que necesitan certificación para entrar a planta; conocimiento concentrado en pocas personas; turnos y plantas dispersos.","Certificación y recertificación con QR que habilita acceso a áreas; checklist de auditoría en piso; contenido técnico propio; capacitación de distribuidores e integradores.","Bohn México: el doble de certificados en un semestre; Codimar: 52% más calidad; Techint, Stellantis, Scania."],
+ ["Agro y agroindustria","Personal en campo sin conectividad estable; productores y cooperativistas por capacitar; temporadas que concentran la capacitación; riesgo laboral.","Modo sin conexión; contenido corto en tiempos muertos del campo; certificación de seguridad auditable; QR en equipo y silo.","Cargill, LDC (Louis Dreyfus)."],
+ ["Telecomunicaciones","Canales, distribuidores y técnicos tercerizados; lanzamientos y cambios de oferta constantes; alta rotación en atención y campo.","Capacitación de canal y técnico externo en la misma plataforma; comunicación de oferta por región y canal; accesibilidad nativa.","Axtel México: 99.1% de participación, 12.6 horas por colaborador."],
+ ["Energía, agua y servicios públicos","Operación crítica regulada; equipos técnicos en zonas remotas; comprobar capacitación ante auditoría; terceros en actividades de riesgo.","Certificación obligatoria con vencimiento automático; procedimiento por QR en el activo; checklist de campo; reportes históricos.","Casos regionales por completar."],
+ ["Transporte y logística","Choferes y equipos de ruta casi nunca en base; estandarizar carga, descarga y atención; seguridad vial con evidencia.","Contenido corto en el celular entre rutas; modo sin conexión; certificación con evidencia para cliente y aseguradora.","Scania."],
+ ["Farmacéutica","Fuerza de ventas y visitadores médicos con actualización constante de producto, a veces en varios países; regulación sobre lo que se comunica.","Actualizaciones de producto rastreadas; firma electrónica como evidencia; evaluación antes de liberar material comercial; un mismo programa replicado en varios países.","Abbott: proyecto en 9 países de LATAM (cifras por confirmar)."],
+ ["Farmacias","Dependientes con alta rotación; producto y reglas de dispensación cambiantes; atención distinta entre sucursales.","Inducción corta por puesto; consulta rápida en mostrador desde el celular; campañas con quiz previo.","Casos regionales por completar."],
+ ["Servicios financieros y seguros","Regulación con plazos; red de corresponsales, agentes y asesores independientes; trazabilidad completa.","Comunicación de normas con firma electrónica; certificación con recertificación; capacitación de agentes externos en la misma base.","MSIG: una base para 46 países y más de 40 mil empleados."],
+ ["Salud","Personal en turnos; protocolos que cambian; acreditaciones que exigen evidencia; red de distribuidores.","Protocolos por QR en el punto de atención; certificaciones con vigencia; contenido técnico multiidioma.","Adin: fuente única para su red global de distribuidores."],
+ ["Minería y construcción","Operación de alto riesgo; contratistas en zona operativa; personal con poca familiaridad digital y sin correo.","QR que habilita acceso a áreas; capacitación de contratistas en la misma plataforma; contenido visual y sin conexión; tabletas compartidas en obra.","Techint; Omega 2011: onboarding de 5 meses a 1 mes sin computadoras en sitio."],
+ ["Tecnología y servicios","Crecimiento rápido con ingresos constantes; producto que cambia rápido; equipos en varios países y husos horarios.","Onboarding estandarizado y medible; actualizaciones para equipos globales; reportes para detectar quién necesita apoyo.","GlassesUSA: 25% más eficiencia en onboarding."]
+];
+
+const VIDEOS = [
+ ["Coca-Cola LATAM: proyecto EDUKO","Redes de socios, embotelladores y distribuidores","https://www.youtube.com/watch?v=a5uhF8_9NB8"],
+ ["Bohn México","Manufactura y capacitación de distribuidores","https://www.youtube.com/watch?v=EQ_64FnJN7s"],
+ ["Video 1 (título por definir)","Descripción por definir","https://youtu.be/J0w3ctLujsI"],
+ ["Video 2 (título por definir)","Descripción por definir","https://youtu.be/kkpgEZrVo_g"],
+ ["Video 3 (título por definir)","Descripción por definir","https://youtu.be/mP90NRzLF2I"]
+ /* Para agregar un video: ["Título","Para qué usarlo","https://www.youtube.com/watch?v=ID"], */
+];
+
+const FEAT = [
+ ["Creación de contenido","Constructor de contenido unificado: PPT, PDF, video, YouTube, Vimeo, sitios y SCORM en un solo contenido interactivo","Proceso repartido entre varias herramientas de autoría","Arma en vivo un contenido con una diapositiva, un video y una pregunta. Toma menos de dos minutos."],
+ ["Creación de contenido","Bloqueos de avance y firma electrónica con contraseña del usuario","Lectura pasiva sin evidencia; auditoría que pide constancia de conocimiento","Muestra el bloqueo de video y luego la firma pidiendo contraseña. Cierra la conversación con compliance."],
+ ["Creación de contenido","Flujos (comunicados y campañas) y cursos (rutas con desbloqueo por calificación)","Comunicados perdidos en WhatsApp, correo y periódico mural","Compara lado a lado: flujo para comunicados, curso para la ruta obligatoria."],
+ ["Creación de contenido","Artículos y base de conocimiento con búsqueda e historial de cambios","Conocimiento disperso en drives y wikis, sin saber quién lo leyó","Muestra la búsqueda dentro del artículo y el registro de versiones."],
+ ["Creación de contenido","Áreas de trabajo colaborativas con control de versiones y enlace seguro para validadores externos","Aprobación de contenido con proveedores por correo","Muestra el historial y el enlace que recibe el proveedor."],
+ ["Creación de contenido","Examen aleatorio desde un banco de preguntas","Respuestas compartidas entre colaboradores","Genera dos exámenes seguidos y muestra que salen preguntas distintas."],
+ ["Creación de contenido","Catálogo de contenido listo: más de 200 cursos en 15 categorías (disponibilidad en español por confirmar)","Cliente que necesita arrancar rápido sin contenido propio","Abre las categorías y muestra un curso de seguridad o liderazgo."],
+ ["Acceso y movilidad","App móvil con la marca del cliente, acceso sin correo corporativo y modo sin conexión","Personal deskless sin correo, sin computadora y con poco tiempo","Ábrela en el celular y activa el modo avión para probar el offline."],
+ ["Acceso y movilidad","Códigos QR en el punto de ejecución (equipo, almacén, punto de venta, manual) y registro de asistencia","Conocimiento lejos de donde se ejecuta; listas de asistencia en papel","Genera un QR en el momento y escanéalo con el celular del cliente."],
+ ["Acceso y movilidad","Accesibilidad: ajuste de fuente y contraste, integración con herramientas externas de lengua de señas (cobertura en LATAM por confirmar)","Política de diversidad, requisito de licitación o de compliance","Muestra el ajuste de fuente y contraste."],
+ ["Acceso y movilidad","Multiidioma: 25 idiomas, mismo contenido base para varios países","Operación multipaís donde el mensaje llega distinto a cada región","Cita Coca-Cola LATAM, Adin y MSIG."],
+ ["Engagement","Gamificación y tienda de recompensas, con puntos limitables a una campaña","Bajo engagement voluntario; incentivos sin control","Muestra el ranking, la tienda y la configuración por campaña."],
+ ["Engagement","Feed de contenidos cortos tipo Reels, videoteca y catálogo de autoinscripción","Plataforma que solo se abre cuando la exigen","Muestra feed y catálogo lado a lado."],
+ ["Engagement","Notificaciones y recordatorios automáticos, incluido vencimiento de certificados","T&D persiguiendo avances por correo y Excel","Muestra la configuración de recordatorios y recertificación."],
+ ["Gestión y administración","Perfiles multinivel: alumno, instructor, editor, gerente, gerente de capacitación, administrador","Altas que dependen de TI; gerentes locales sin autonomía","Explica que el gerente de sucursal inscribe a su equipo sin abrir ticket."],
+ ["Gestión y administración","Alta y sincronización de usuarios: manual, por Excel, por API con RR. HH. o autorregistro con aprobación","Onboarding lento; terceros sin alta; historial perdido al cambiar de área","Muestra el autorregistro con aprobación."],
+ ["Gestión y administración","Estructura multinivel y multimarca, con reportes consolidados y segregados","La matriz exige pero no ve; franquiciatarios viendo datos ajenos","Dibuja la jerarquía del cliente: matriz, regional, sucursal, gerente."],
+ ["Gestión y administración","Eventos y capacitación híbrida: calendario, inscripción, asistencia por QR, Zoom (licencia Enabley) y Teams (licencia del cliente)","Presencial controlado en Excel y desconectado del e-learning","Muestra que sin terminar el e-learning no se habilita el presencial."],
+ ["Gestión y administración","Certificaciones y recertificación automática; el QR del certificado puede controlar acceso a áreas restringidas","Vencimientos controlados a mano","Muestra la calificación mínima y el panel por equipo."],
+ ["Gestión y administración","Auditoría y checklist de campo desde el celular","Evaluación práctica en papel, sin consolidar","Llena un checklist en el celular frente al cliente."],
+ ["Reportes y datos","Dashboard del gerente: avance, calificación y evolución por sucursal, región, turno o función","Gerente local sin visibilidad; RR. HH. convertido en central de reportes","Entra como gerente de sucursal y muestra quién se quedó atrás."],
+ ["Reportes y datos","Reportes gerenciales y analíticos: desempeño por pregunta, matriz de habilidades, CSV histórico","Reportes imprecisos y auditorías","Muestra las preguntas con mayor tasa de error. Es lo que más impresiona a los instructores."],
+ ["Reportes y datos","Integraciones y APIs: SAP SuccessFactors, Workday, Cornerstone, Active Directory, Salesforce, Power BI","Miedo a duplicar el sistema de RR. HH.","Pregunta qué sistema usa el cliente y dibuja el flujo de datos hacia él."]
+];
+
+const OBJ = [
+ ["Competencia y proveedor actual","Ya tenemos SAP SuccessFactors.",
+  "Miedo a duplicar sistemas y a pelearse con RR. HH. corporativo, que eligió y defiende el sistema actual.",
+  "Son papeles complementarios, no un reemplazo. SuccessFactors es el sistema de registro para gobierno, compliance y currículum institucional. Enabley es la capa de ejecución para la primera línea: móvil, sin conexión, con creación rápida. Los datos de capacitación fluyen de Enabley a SAP, que sigue siendo la fuente única de verdad.",
+  "Clientes globales como Unilever usan Enabley junto con SAP. La integración la puede hacer el equipo técnico del cliente con las APIs, sin costo, o Enabley, con costo."],
+ ["Competencia y proveedor actual","No tenemos capacidad para administrar dos plataformas.",
+  "Equipo de T&D reducido y miedo real a duplicar trabajo, no falta de interés.",
+  "Enabley se vuelve la plataforma única de capacitación, incluso para terceros y socios. El sistema corporativo deja de operarse en el día a día y queda solo como registro. En la práctica el equipo opera menos, no más.",
+  "MSIG atiende a empleados, agentes independientes y clientes desde una sola base de contenido en 46 países."],
+ ["Competencia y proveedor actual","Vamos a darle otra oportunidad al proveedor actual.",
+  "Costo de cambio percibido y miedo a repetir una frustración.",
+  "No ataques al proveedor actual. Ancla en el dolor específico que no resolvió y propón una comparación objetiva por requisito: desempeño con carga, precisión de reportes, autonomía para crear contenido, movilidad real. Ofrece un piloto pequeño y reversible.",
+  "Coca-Cola LATAM eligió Enabley después de un piloto con 600 participantes de 8 embotelladores."],
+ ["Presupuesto y tiempos","El presupuesto de este año ya está cerrado.",
+  "La partida del año está comprometida. Casi nunca es falta de interés: es calendario.",
+  "Separa decisión de desembolso. Cierra alcance y contrato ahora con facturación desde el siguiente ejercicio, o empieza con un piloto que quepa en el presupuesto actual y genere el caso de negocio. Pregunta cuándo se arma el presupuesto del siguiente ciclo para entrar en esa ventana.",
+  "Posponer la decisión no reduce la inversión, pospone el resultado. Si viene una gran actualización de contenido, migrar antes evita cargarlo dos veces."],
+ ["Precio y ROI","¿Por qué no cobrar solo por usuario activo? Sale más barato.",
+  "Compara una línea de precio, no el resultado. Todavía no ve que limitar el acceso rompe su propio caso de uso.",
+  "La plataforma tiene que ser donde se resuelve la duda. Con límite de usuarios activos, parte de la operación queda fuera: la comunicación masiva se vuelve inviable, la campaña no llega el mismo día a toda la red y RR. HH. termina administrando una fila de acceso.",
+  "En una operación de 19,000 personas, el modelo por usuario activo cubría 10,000 y dejaba fuera a 9,000. El acceso pleno cubría a todos con un costo por persona cerca de 30% menor."],
+ ["Precio y ROI","¿Cómo justifico esta inversión internamente?",
+  "Cree en la solución pero no sabe defenderla con números ante quien aprueba.",
+  "Arma el caso frente a él, con sus números: colaboradores, ingresos por año y salario promedio de ingreso. Calcula cuántos días de nómina se consumen hoy en inducción y suma merma y velocidad de campaña.",
+  "En una cadena de 19,000 colaboradores con 6,000 ingresos al año, ahorrar 6 días por ingreso vale cerca de USD 1.1 millones al año (ver Caso de negocio)."],
+ ["Precio y ROI","¿Qué incluye exactamente la licencia?",
+  "Miedo a comprar un paquete básico y descubrir que todo lo importante es add-on.",
+  "Sé transparente con la arquitectura. El Core incluye entorno de aprendizaje, app móvil, gestión de usuarios, rutas, cursos, contenidos, comunicación, evaluaciones, reportes, dashboards, jerarquías, administración e IA incorporada con franquicia de uso. Fuera de eso hay capas opcionales: nivel de soporte, Boosters, add-ons y servicios.",
+  "El modelo por capas permite empezar simple y crecer. Un cliente pequeño se queda en el Core; una operación grande suma Boosters y Professional Services."],
+ ["Precio y ROI","¿Por qué hay un costo de implementación aparte de la licencia?",
+  "Sensación de cobro extra o mala experiencia con una implementación que nunca terminó.",
+  "La implementación es trabajo de proyecto, no de software: kickoff, configuración, estructura de unidades, puestos y jerarquías, carga de usuarios, migración de contenido, capacitación de administradores y preparación del Go Live. Es lo que hace que el proyecto entre en producción en vez de quedarse en licencias pagadas sin uso.",
+  "La plataforma es lo que se compra; la operación funcionando es lo que se construye. Customer Success sigue después del Go Live cuidando adopción y evolución."],
+ ["Contenido y migración","Ya invertimos en herramientas de autoría y contenido SCORM.",
+  "No quiere tirar su acervo ni admitir que la inversión anterior fue un error.",
+  "Enabley importa paquetes SCORM y gestiona la homologación con los proveedores. La ganancia no es cambiar el acervo, es acortar el flujo: lo que hoy pasa por tres herramientas se crea y publica en un solo lugar.",
+  "Bohn México genera contenido técnico directamente en la plataforma y duplicó sus certificaciones en un semestre."],
+ ["Contenido y migración","Migrar nuestro contenido es un riesgo grande.",
+  "Volumen de acervo y miedo a retrabajo o a detener la operación.",
+  "Trátalo como proyecto por etapas, no como un cambio de golpe. Las áreas de trabajo con control de versiones permiten construir en paralelo y migrar por lotes.",
+  "Confirma alcance y servicios de migración con Jaime antes de prometer plazos."],
+ ["Seguridad e IA","¿Y si la IA inventa una respuesta?",
+  "Riesgo reputacional y de compliance. Ya vio IA generalista equivocarse.",
+  "El AI Companion responde solo con el contenido asignado al alumno. El administrador elige qué materiales alimentan la IA y segmenta por perfil; cuando la fuente oficial cambia, la respuesta cambia.",
+  "ISO 27001 y GDPR. Ofrece una demo con material real del cliente: es la prueba más rápida."],
+ ["Técnica","Nuestra gente no tiene correo ni computadora.",
+  "Personal deskless de verdad. Es un requisito técnico, no una excusa.",
+  "Es exactamente el público para el que se diseñó la plataforma: app con la marca del cliente, acceso sin correo corporativo, modo sin conexión, contenido corto y QR en el punto de ejecución. Donde no hay celular propio, tabletas compartidas en el sitio.",
+  "Omega 2011 redujo el onboarding de 5 meses a 1 mes con tabletas compartidas, en una operación sin computadoras ni internet en el lugar de trabajo."],
+ ["Técnica","Necesitamos reportes para auditoría.",
+  "Exigencia regulatoria con consecuencias reales (en México, DC-3 y DC-4 de la STPS; en otros países, el marco de seguridad y salud local).",
+  "CSV personalizado con datos históricos por fecha, desempeño por pregunta y trazabilidad completa por colaborador. La firma electrónica exige la contraseña del usuario y deja registro auditable. En México, las constancias DC-3 y DC-4 se generan con la función de certificación.",
+  "Recertificación automática con aviso de vencimiento y panel de estado por equipo. Ver Normativa y constancias."],
+ ["Técnica","El alta de usuarios depende de nuestro equipo de TI.",
+  "Cuello de botella interno que proyecta en la solución nueva.",
+  "Los perfiles multinivel permiten al gerente local inscribir y dar seguimiento a su equipo sin abrir ticket. El alta puede ser masiva por Excel, por API con RR. HH. o por autorregistro con aprobación.",
+  "Un cambio de puesto o de área actualiza las asignaciones automáticamente y conserva el historial."],
+ ["Técnica","¿Tienen estructura para atender una operación de nuestro tamaño?",
+  "Duda sobre continuidad y sobre quién atiende después de la firma.",
+  "Muestra escala y servicio juntos: más de 1 millón de usuarios activos, más de 30 países, 25 idiomas, 19 años de operación, ISO 27001 y GDPR. Cada cuenta tiene Customer Success dedicado y un equipo de producto que lleva las necesidades al roadmap.",
+  "Coca-Cola LATAM opera con su red de embotelladores de la región; MSIG, con más de 40,000 empleados en 46 países."],
+ ["Técnica","¿Cuánto tiempo hasta que esté funcionando?",
+  "Miedo a un proyecto largo que atraviese el año sin resultados.",
+  "Depende del alcance, pero el camino es empezar por un público y un objetivo, no por toda la plataforma. El kickoff define el público inicial y de 3 a 5 indicadores, y la activación se hace por lotes.",
+  "Maytronics decidió más que duplicar su licencia a los 4 meses de uso."],
+ ["Técnica","¿Cobran aparte la integración con nuestro sistema de RR. HH.?",
+  "Miedo a costos ocultos y a depender del proveedor para algo que su TI quizá puede hacer.",
+  "Hay dos caminos y el cliente elige. Enabley publica las APIs y la documentación, así que su equipo o un socio puede desarrollarla sin costo de proyecto. Si prefiere que la haga Enabley, es un proyecto aparte dimensionado por complejidad.",
+  "Comparte la documentación de las APIs en la misma reunión (ver Integraciones)."],
+ ["Adopción y engagement","Rastrear la lectura no garantiza que hayan entendido.",
+  "Ya probó wiki, drive y comunicados por correo, y sabe que abrir no es entender.",
+  "Dale la razón y muestra la diferencia: interacción obligatoria dentro del contenido, bloqueo para no saltar videos, calificación mínima para desbloquear la siguiente etapa y análisis de las preguntas con más errores.",
+  "Axtel logró 99.1% de participación y 4.71 de 5 en satisfacción."],
+ ["Adopción y engagement","Ya probamos una plataforma y nadie la usó.",
+  "Trauma de un proyecto anterior. El miedo no es al precio, es a repetir un fracaso visible.",
+  "La adopción no viene de obligar, viene de la utilidad. Pregunta qué resolvía la plataforma anterior en el día a día; normalmente, nada. Enabley entra como herramienta de trabajo: la respuesta en medio de la atención, el procedimiento en el QR junto al equipo. Suma gamificación y contenido corto para sostener el hábito.",
+  "Coca-Cola LATAM aumentó 88% los accesos a los cursos; Axtel llegó a 99.1% de participación."],
+ ["Adopción y engagement","Esto no reemplaza nuestra capacitación presencial.",
+  "Cultura presencial fuerte y, a menudo, un equipo de instructores cuyo papel teme eliminar.",
+  "Enabley no reemplaza lo presencial, lo potencia. Gestiona el ciclo completo del evento y permite condicionar la inscripción presencial a terminar antes un e-learning, para que el instructor reciba un grupo nivelado.",
+  "Codimar combinó presencial y e-learning en su programa Lean Six Sigma y aumentó 52% la calidad de fabricación."]
+];
+
+/* ============ UTILIDADES ============ */
+const $ = (s,r=document)=>r.querySelector(s);
+const $$ = (s,r=document)=>[...r.querySelectorAll(s)];
+const el = (t,props={},html)=>{const e=document.createElement(t);Object.assign(e,props);if(html!=null)e.innerHTML=html;return e};
+const esc = s=>s.replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const norm = s=>s.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
+
+/* ============ RENDER: SEGMENTOS ============ */
+const segSel=$('#segSel'), segBody=$('#segBody');
+segSel.innerHTML='<option value="">Todos los sectores</option>'+SEG.map((s,i)=>`<option value="${i}">${esc(s[0])}</option>`).join('');
+segBody.innerHTML=SEG.map((s,i)=>`<tr id="seg-${i}" data-i="${i}"><td>${esc(s[0])}</td><td>${esc(s[1])}</td><td>${esc(s[2])}</td><td>${esc(s[3])}</td></tr>`).join('');
+function renderSeg(){
+  const v=segSel.value;
+  $$('tr',segBody).forEach(r=>r.hidden=!(v===''||r.dataset.i===v));
+}
+segSel.addEventListener('change',renderSeg); renderSeg();
+
+/* ============ RENDER: FUNCIONALIDADES ============ */
+const FCATS=[...new Set(FEAT.map(f=>f[0]))];
+let featCat='';
+const featChips=$('#featChips'), featBody=$('#featBody');
+featBody.innerHTML=FEAT.map(f=>`<tr data-cat="${esc(f[0])}"><td>${esc(f[1])}</td><td>${esc(f[2])}</td><td>${esc(f[3])}</td></tr>`).join('');
+function renderFeat(){
+  featChips.innerHTML='';
+  ['Todas',...FCATS].forEach(c=>{
+    const b=el('button',{className:'chip',type:'button'},esc(c));
+    b.setAttribute('aria-pressed',String((c==='Todas'&&!featCat)||c===featCat));
+    b.onclick=()=>{featCat=c==='Todas'?'':c;renderFeat()};
+    featChips.appendChild(b);
+  });
+  $$('tr',featBody).forEach(r=>r.hidden=!!featCat&&r.dataset.cat!==featCat);
+}
+renderFeat();
+
+/* ============ RENDER: OBJECIONES ============ */
+const OCATS=[...new Set(OBJ.map(o=>o[0]))];
+let objCat='';
+const objChips=$('#objChips'), objList=$('#objList');
+OBJ.forEach((o,i)=>{
+  const d=el('details',{className:'obj',id:'obj-'+i});
+  d.dataset.cat=o[0];
+  d.innerHTML=`<summary><span>${esc(o[1])}</span><span class="obj-cat">${esc(o[0])}</span></summary>
+    <div class="obj-body">
+      <div class="row"><b>Lo que hay detrás</b>${esc(o[2])}</div>
+      <div class="row"><b>Respuesta recomendada</b>${esc(o[3])}</div>
+      <div class="row"><b>Prueba a usar</b>${esc(o[4])}</div>
+      <button class="copy" type="button" data-copy="${esc(o[3])}">Copiar respuesta</button>
+    </div>`;
+  objList.appendChild(d);
+});
+function renderObj(){
+  objChips.innerHTML='';
+  ['Todas',...OCATS].forEach(c=>{
+    const b=el('button',{className:'chip',type:'button'},esc(c));
+    b.setAttribute('aria-pressed',String((c==='Todas'&&!objCat)||c===objCat));
+    b.onclick=()=>{objCat=c==='Todas'?'':c;renderObj()};
+    objChips.appendChild(b);
+  });
+  $$('details.obj',objList).forEach(d=>d.hidden=!!objCat&&d.dataset.cat!==objCat);
+}
+renderObj();
+
+/* ============ RENDER: VIDEOS ============ */
+(function(){
+  const g=$('#videoGrid'); if(!g) return;
+  g.innerHTML=VIDEOS.map(v=>{
+    const m=v[2].match(/(?:v=|youtu\.be\/|embed\/)([\w-]{11})/); const id=m?m[1]:'';
+    return `<a class="vcard" href="${esc(v[2])}" target="_blank" rel="noopener"><img loading="lazy" alt="" src="https://img.youtube.com/vi/${id}/hqdefault.jpg"><span><b>${esc(v[0])}</b>${esc(v[1])}</span></a>`;
+  }).join('');
+})();
+
+/* ============ COPIAR ============ */
+document.addEventListener('click',e=>{
+  const b=e.target.closest('.copy'); if(!b) return;
+  const txt=b.dataset.copy!=null?b.dataset.copy:($('#'+b.dataset.copyId)||{}).textContent||'';
+  const done=()=>{const old=b.textContent;b.textContent='Copiado';b.classList.add('done');setTimeout(()=>{b.textContent=old;b.classList.remove('done')},1600)};
+  if(navigator.clipboard&&window.isSecureContext){navigator.clipboard.writeText(txt).then(done,()=>fallback(txt,done))}else fallback(txt,done);
+});
+function fallback(t,cb){const ta=el('textarea',{value:t});ta.style.position='fixed';ta.style.opacity='0';document.body.appendChild(ta);ta.select();try{document.execCommand('copy');cb()}catch(_){}ta.remove()}
+
+/* ============ NAVEGACIÓN ============ */
+const side=$('#side'), menuBtn=$('#menuBtn');
+menuBtn.onclick=()=>{const o=side.classList.toggle('open');menuBtn.setAttribute('aria-expanded',String(o))};
+$$('#nav a').forEach(a=>a.addEventListener('click',()=>{side.classList.remove('open');menuBtn.setAttribute('aria-expanded','false')}));
+const navLinks=new Map($$('#nav a').map(a=>[a.getAttribute('href').slice(1),a]));
+const io=new IntersectionObserver(es=>{
+  es.forEach(en=>{if(en.isIntersecting){navLinks.forEach(a=>a.classList.remove('on'));const a=navLinks.get(en.target.id);if(a)a.classList.add('on')}});
+},{rootMargin:'-20% 0px -70% 0px'});
+$$('main section').forEach(s=>io.observe(s));
+const totop=$('#totop');
+addEventListener('scroll',()=>totop.classList.toggle('show',scrollY>900),{passive:true});
+totop.onclick=()=>scrollTo({top:0});
+
+/* ============ BUSCADOR ============ */
+const q=$('#q'), box=$('#results');
+let index=[], sel=-1, shown=[];
+function buildIndex(){
+  index=[]; let n=0;
+  $$('main section').forEach(sec=>{
+    const secTitle=($('h2',sec)||{}).textContent||'';
+    $$('h3, details.obj, tbody tr, tr, p, li',sec).forEach(node=>{
+      if(node.closest('.results')) return;
+      if(node.tagName==='TR' && node.querySelector('th')) return;
+      if(node.tagName==='P'&&node.closest('details')) return;
+      const text=node.tagName==='DETAILS'?node.textContent:node.textContent;
+      const clean=text.replace(/\s+/g,' ').trim();
+      if(clean.length<12) return;
+      if(!node.id) node.id='s'+(n++);
+      let title;
+      if(node.tagName==='DETAILS') title=($('summary span',node)||{}).textContent;
+      else if(node.tagName==='TR') title=(node.cells[0]||{}).textContent;
+      else title=clean.slice(0,90)+(clean.length>90?'…':'');
+      index.push({id:node.id,title:title.trim(),sec:secTitle,secId:sec.id,text:clean,n:norm(clean),kind:node.tagName==='DETAILS'?'obj':''});
+    });
+  });
+}
+function mark(s,terms){
+  let out=esc(s);
+  terms.forEach(t=>{ if(!t) return; const re=new RegExp('('+t.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')+')','ig'); out=out.replace(re,'<mark>$1</mark>')});
+  return out;
+}
+function snippet(item,terms){
+  const idx=terms.map(t=>item.n.search(new RegExp('(^|[^a-z0-9])'+t.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')))).filter(i=>i>=0).sort((a,b)=>a-b)[0]||0;
+  const start=Math.max(0,idx-30);
+  return (start>0?'…':'')+item.text.slice(start,start+130)+(item.text.length>start+130?'…':'');
+}
+function search(v){
+  const terms=norm(v).split(/\s+/).filter(Boolean);
+  if(!terms.length){box.classList.remove('open');return}
+  const res=terms.map(t=>new RegExp('(^|[^a-z0-9])'+t.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')));
+  shown=index.filter(it=>res.every(r=>r.test(it.n)))
+    .map(it=>({it,score:terms.reduce((s,t)=>s+(norm(it.title).includes(t)?3:0),0)+(it.kind==='obj'?2:0)}))
+    .sort((a,b)=>b.score-a.score).slice(0,12).map(x=>x.it);
+  sel=-1;
+  box.innerHTML=shown.length?shown.map((it,i)=>`<a href="#${it.id}" data-i="${i}" role="option"><b>${mark(it.title,terms)}</b><small>${esc(it.sec)} · ${mark(snippet(it,terms),terms)}</small></a>`).join(''):'<div class="none">Sin resultados. Prueba con otra palabra.</div>';
+  box.classList.add('open');
+}
+function go(it){
+  box.classList.remove('open');
+  const node=document.getElementById(it.id); if(!node) return;
+  // si está filtrado fuera, quitar filtros
+  if(node.closest('[hidden]')){ objCat='';featCat='';segSel.value='';renderObj();renderFeat();renderSeg(); }
+  const target=document.getElementById(it.id);
+  const d=target.closest('details'); if(d) d.open=true; if(target.tagName==='DETAILS') target.open=true;
+  target.scrollIntoView({behavior:'smooth',block:'center'});
+  target.style.transition='background .3s';const bg=target.style.background;target.style.background='#FFF1CC';
+  setTimeout(()=>target.style.background=bg,1800);
+}
+q.addEventListener('input',()=>search(q.value));
+q.addEventListener('focus',()=>{if(q.value)search(q.value)});
+box.addEventListener('click',e=>{const a=e.target.closest('a');if(!a)return;e.preventDefault();go(shown[+a.dataset.i])});
+q.addEventListener('keydown',e=>{
+  const links=$$('a',box);
+  if(e.key==='ArrowDown'&&links.length){e.preventDefault();sel=(sel+1)%links.length}
+  else if(e.key==='ArrowUp'&&links.length){e.preventDefault();sel=(sel-1+links.length)%links.length}
+  else if(e.key==='Enter'&&shown.length){e.preventDefault();go(shown[Math.max(sel,0)]);return}
+  else if(e.key==='Escape'){box.classList.remove('open');q.blur();return}
+  else return;
+  links.forEach((l,i)=>l.classList.toggle('sel',i===sel)); if(links[sel])links[sel].scrollIntoView({block:'nearest'});
+});
+document.addEventListener('click',e=>{if(!e.target.closest('.search'))box.classList.remove('open')});
+document.addEventListener('keydown',e=>{if(e.key==='/'&&!/INPUT|TEXTAREA|SELECT/.test(document.activeElement.tagName)){e.preventDefault();q.focus()}});
+buildIndex();
+</script>
+</body>
+</html>
